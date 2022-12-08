@@ -1,13 +1,24 @@
-import React from 'react';
-import { Button } from 'flowbite-react';
-import Style from './style.module.css';
+import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import WebFont from 'webfontloader';
+import Landing from './pages/Landing';
+import Error from './pages/Error';
 
-const App = () => {
+const App: React.FC = () => {
+	useEffect(() => {
+		WebFont.load({
+			google: {
+				families: ['Nunito', 'Quicksand', 'Poppins'],
+			},
+		});
+	}, []);
 	return (
-		<div className={Style.main}>
-			App
-			<Button color='failure'>Failure</Button>
-		</div>
+		<>
+			<Routes>
+				<Route path='/' element={<Landing />} />
+				<Route path='*' element={<Error />} />
+			</Routes>
+		</>
 	);
 };
 
