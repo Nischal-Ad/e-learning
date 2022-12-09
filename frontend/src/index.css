@@ -9,9 +9,17 @@
 }
 
 h1 {
-	@apply font-bold text-[32px] leading-[43px];
+	@apply font-bold text-[32px] leading-[43px] text-secondary;
 }
 
 h2 {
-	@apply font-semibold text-[18px] leading-[32px];
+	@apply font-semibold text-[18px] leading-[32px] text-secondary;
+}
+
+h3 {
+	@apply font-medium text-[18px];
+}
+
+p {
+	@apply text-dark;
 }

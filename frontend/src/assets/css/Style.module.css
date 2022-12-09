@@ -7,12 +7,40 @@
 		@apply container mx-auto cursor-default;
 	}
 
-	.landing_bg {
-		@apply bg-cover;
-		background-image: url('/public/img/wave.svg');
+	.btn {
+		background: linear-gradient(90deg, #ec340c 13.24%, #ec6c0c 92.57%);
+		@apply py-2 pl-10 pr-5 rounded-sm flex items-center;
 	}
 
-	.btn {
-		@apply bg-blue-900 py-2 pl-10 pr-5 rounded-sm flex items-center;
+	.landing_bg {
+		background-image: url('/public/img/dotts.svg'),
+			linear-gradient(90.71deg, #ec340c 2.79%, #ec6c0c 49.98%, #ecad0c 99.38%);
+	}
+
+	.waves {
+		background-image: url('/public/img/waves.svg');
+		@apply bg-bottom bg-no-repeat pt-28 bg-contain px-0 mx-0;
+	}
+
+	.card_body {
+		@apply bg-white drop-shadow-md p-5 flex flex-col items-center rounded-md min-h-[400px];
+	}
+
+	.card_heading {
+		@apply text-[22px] text-secondary my-[6px];
+		overflow: hidden;
+		width: 325px;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	.card_desc {
+		@apply leading-[30px];
+		overflow: hidden;
+		width: 325px;
+		display: -webkit-box;
+		-webkit-line-clamp: 7;
+		-webkit-box-orient: vertical;
 	}
 }
