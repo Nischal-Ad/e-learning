@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { RxDividerVertical } from 'react-icons/rx';
 import Section from '../../utils/Section';
 import Classes from '../../assets/css/Style.module.css';
 
