@@ -3,7 +3,7 @@ import Classes from '../assets/css/Style.module.css';
 
 type Children = {
 	children: React.ReactNode;
-	className: string | '';
+	className?: string | '';
 };
 
 const Section: React.FC<Children> = ({ children, className }) => {

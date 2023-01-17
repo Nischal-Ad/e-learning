@@ -10,6 +10,8 @@ module.exports = {
 			md: '768px',
 			lg: '1024px',
 			xl: '1280px',
+
+			lg_max: { max: '1023px' },
 		},
 		extend: {
 			fontFamily: {
@@ -18,12 +20,11 @@ module.exports = {
 				quicksand: "'Quicksand'",
 			},
 			colors: {
-				pink: '#E9DFDE',
-				main: '#18233E',
-				primary: '#445B64',
-				secondary: '#74798E',
-				tertiary: '#7F7171',
-				gray: '#b1bcdb',
+				primary: '#FC9444',
+				secondary: '#3C3C3C',
+				Tertiary: '#EC340C',
+				Quaternary: '#EC6C0C',
+				dark: ' #808080',
 			},
 		},
 	},

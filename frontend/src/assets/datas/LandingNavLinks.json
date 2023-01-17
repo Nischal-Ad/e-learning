@@ -1,0 +1,24 @@
+[
+	{ "name": "Home", "link": "/" },
+	{
+		"name": "Services",
+		"link": "/services"
+	},
+	{
+		"name": "Our Goals",
+		"link": "/goals"
+	},
+	{
+		"name": "About Us",
+		"link": "/about-us"
+	},
+	{
+		"name": "Testimonials",
+		"link": "/testimonials"
+	},
+	{
+		"name": "Login / Sign Up",
+		"link": "/auth",
+		"btn": true
+	}
+]
