@@ -1,8 +1,9 @@
 import React from 'react';
+import Classes from '../assets/css/Style.module.css';
 
 type HeadingProp = {
 	name: string;
-	desc: string;
+	desc?: string;
 };
 
 const Heading: React.FC<HeadingProp> = ({ name, desc }) => {
@@ -17,3 +18,13 @@ const Heading: React.FC<HeadingProp> = ({ name, desc }) => {
 };
 
 export default Heading;
+
+export const TitleHeading: React.FC<HeadingProp> = ({ name, desc }) => {
+	return (
+		<div className={`${Classes.landing_bg} flex flex-col`}>
+			<div className='pt-16 pb-10'>
+				<Heading name={name} desc={desc} />
+			</div>
+		</div>
+	);
+};

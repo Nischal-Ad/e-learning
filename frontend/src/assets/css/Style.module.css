@@ -9,7 +9,7 @@
 
 	.btn {
 		background: linear-gradient(90deg, #ec340c 13.24%, #ec6c0c 92.57%);
-		@apply py-2 pl-10 pr-5 rounded-sm flex items-center;
+		@apply py-2 pl-10 pr-5 rounded-sm flex items-center text-white;
 	}
 
 	.landing_bg {
@@ -27,9 +27,8 @@
 	}
 
 	.card_heading {
-		@apply text-[22px] text-secondary my-[6px];
+		@apply text-[24px] text-secondary my-[6px];
 		overflow: hidden;
-		width: 325px;
 		display: -webkit-box;
 		-webkit-line-clamp: 1;
 		-webkit-box-orient: vertical;
@@ -38,9 +37,16 @@
 	.card_desc {
 		@apply leading-[30px];
 		overflow: hidden;
-		width: 325px;
 		display: -webkit-box;
 		-webkit-line-clamp: 7;
+		-webkit-box-orient: vertical;
+	}
+
+	.testomonial_comments {
+		@apply leading-[24px] mb-5 text-justify min-h-[96px];
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
 	}
 }

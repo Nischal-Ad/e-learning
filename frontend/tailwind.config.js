@@ -10,6 +10,8 @@ module.exports = {
 			md: '768px',
 			lg: '1024px',
 			xl: '1280px',
+
+			lg_max: { max: '1023px' },
 		},
 		extend: {
 			fontFamily: {

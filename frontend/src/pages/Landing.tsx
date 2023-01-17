@@ -4,12 +4,13 @@ import Goals from '../components/landing/Goals';
 import Services from '../components/landing/Services';
 import Testimonial from '../components/landing/Testimonial';
 import Welcome from '../components/landing/Welcome';
-import LandingNavbar from '../shared/navbar/LandingNavbar';
+import LandingNavbar from '../shared/navbar/Navbar';
+import LandingLinks from '../assets/datas/LandingNavLinks.json';
 
 const Landing: React.FC = () => {
 	return (
 		<>
-			<LandingNavbar />
+			<LandingNavbar links={LandingLinks} />
 			<Welcome />
 			<Services />
 			<Goals />

@@ -7,7 +7,7 @@ const Welcome: React.FC = () => {
 	return (
 		<main className={`${Classes.landing_bg}`}>
 			<div className={`${Classes.waves}`}>
-				<Section className='flex justify-around items-center text-white pb-[50px]'>
+				<Section className='flex justify-around lg:px-0 px-4 lg:flex-row flex-col lg:items-center text-white pb-[50px]'>
 					<div>
 						<h2 className='py-3 text-white'>introduction goes here</h2>
 						<h2 className='py-3 text-white'>
@@ -19,7 +19,7 @@ const Welcome: React.FC = () => {
 							Enroll btn <AiOutlineArrowRight className='ml-8' />
 						</button>
 					</div>
-					<div className='p-10'>
+					<div className='p-10 place-content-center grid'>
 						<img src={process.env.PUBLIC_URL + '/img/learn.svg'} alt='' />
 					</div>
 				</Section>

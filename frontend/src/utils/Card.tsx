@@ -11,12 +11,12 @@ type CardProps = {
 const Card: React.FC<CardProps> = ({ cardpercol = 3, items }) => {
 	const isArray = Array.isArray(items);
 
-	const girdCol = `grid-cols-${cardpercol}`;
-
 	return (
 		<>
 			{isArray ? (
-				<div className={`grid ${girdCol} gap-4 text-center `}>
+				<div
+					className={`grid gap-10 lg:grid-cols-3 drop-shadow-sm text-center`}
+				>
 					{items.map((item, i) => {
 						return (
 							<div key={i} className={Classes.card_body}>
