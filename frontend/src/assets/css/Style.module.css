@@ -7,20 +7,131 @@
 		@apply container mx-auto cursor-default;
 	}
 
-	.btn {
-		background: linear-gradient(90deg, #ec340c 13.24%, #ec6c0c 92.57%);
-		@apply py-2 pl-10 pr-5 rounded-sm flex items-center text-white;
+	.password_show {
+		@apply cursor-pointer absolute mt-[15px] ml-[-30px] text-lg;
 	}
 
-	.landing_bg {
-		background-image: url('/public/img/dotts.svg'),
-			linear-gradient(90.71deg, #ec340c 2.79%, #ec6c0c 49.98%, #ecad0c 99.38%);
+	.input_label {
+		@apply font-semibold px-2;
 	}
 
-	.waves {
-		background-image: url('/public/img/waves.svg');
-		@apply bg-bottom bg-no-repeat pt-28 bg-contain px-0 mx-0;
+	.input_label span {
+		@apply text-red-500;
 	}
+
+	.loading {
+		@apply grid place-content-center;
+	}
+
+	.inputbox {
+		@apply w-full mb-6 mt-1 pl-5 pr-10 rounded-full bg-transparent border-[#49BBBD] focus:ring-[#49BBBD] !important;
+	}
+
+	.btn_submit {
+		@apply px-6 bg-[#49BBBD]  py-2 text-center rounded-full  text-white font-medium;
+	}
+
+	.footer {
+		@apply bg-[#252641] pt-10 pb-5 mt-4;
+	}
+
+	.footer_section {
+		@apply flex flex-col items-center;
+	}
+
+	.navbar_login {
+		@apply bg-[#7FCDCE] shadow-md;
+	}
+
+	.mavLinks_list {
+		@apply lg:mx-4 lg:my-0 my-6  cursor-pointer;
+	}
+
+	.navLinks_dispaly {
+		@apply flex lg:justify-around justify-between lg:flex-row flex-col items-center;
+	}
+
+	.bar {
+		@apply px-4;
+	}
+
+	.footer_head {
+		@apply flex items-center justify-between;
+	}
+
+	.footer_text {
+		@apply text-[#B2B3CF] py-3 font-medium text-[26px] leading-[39px] tracking-[0.04em];
+	}
+
+	.logo_text {
+		@apply text-white font-semibold;
+	}
+
+	.footer_body {
+		@apply pt-4 pb-10 flex justify-around items-center;
+	}
+
+	.footer_btn {
+		@apply mx-2;
+	}
+
+	.footer_input {
+		@apply m-0 mx-2 !important;
+	}
+
+	.links {
+		@apply flex justify-evenly;
+	}
+
+	.links > li {
+		@apply px-4;
+	}
+
+	.footer_links {
+		@apply text-[#B2B3CF] text-center;
+	}
+
+	.footer_span_text {
+		@apply text-[#B2B3CF] mt-[25px];
+	}
+
+	.footer_links p {
+		@apply mt-[20px] text-[#B2B3CF];
+	}
+
+	.header {
+		@apply z-10 top-0 w-full fixed;
+	}
+
+	.navbar_logo {
+		@apply w-[150px];
+	}
+
+	.navbar_section {
+		@apply flex justify-between  py-4  items-center;
+	}
+
+	.header_bg_main {
+		@apply bg-white text-secondary;
+	}
+
+	.header_bg_active {
+		@apply bg-transparent text-white;
+	}
+
+	.navbar_span_links {
+		@apply lg:hidden;
+	}
+
+	.show_hide {
+		@apply w-10 h-10;
+	}
+
+	.mobile_links {
+		@apply bg-white;
+	}
+	/*
+
 
 	.card_body {
 		@apply bg-white drop-shadow-md p-5 flex flex-col items-center rounded-md min-h-[400px];
@@ -48,5 +159,5 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
-	}
+	} */
 }

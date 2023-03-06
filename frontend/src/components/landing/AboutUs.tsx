@@ -4,7 +4,7 @@ import Section from '../../utils/Section';
 
 const AboutUs: React.FC = () => {
 	return (
-		<Section>
+		<Section id='about-us'>
 			<Heading name='About Us:' desc='this is About Us' />
 		</Section>
 	);

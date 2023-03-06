@@ -6,7 +6,7 @@ import Comments from '../../assets/datas/Testominals.json';
 
 const Testimonial: React.FC = () => {
 	return (
-		<Section>
+		<Section id='testiminals'>
 			<Heading name='Testiminals:' desc='What Our Clients Has To Say...' />
 			<TestimonialCard comments={Comments} />
 		</Section>

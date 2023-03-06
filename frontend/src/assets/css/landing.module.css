@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.landing_bg {
+		@apply bg-[#49BBBD] relative;
+	}
+
+	.heading {
+		@apply font-[700] leading-[81px] text-[54px];
+	}
+
+	.desc {
+		@apply text-white mt-10 leading-8;
+	}
+
+	.btn_box {
+		@apply flex justify-evenly items-center mt-6;
+	}
+	.btn_plain {
+		@apply bg-[#7FCDCE] px-10 py-4 text-white font-medium rounded-full;
+	}
+
+	.btn {
+		@apply bg-white rounded-full pr-4 relative text-black font-semibold flex justify-center items-center;
+	}
+
+	.btn_icon {
+		@apply relative h-14 w-14 mr-2 text-[#7FCDCE] rounded-full bg-white;
+	}
+
+	h1 > span {
+		@apply text-[#F48C06];
+	}
+
+	.landing_section {
+		@apply flex justify-around lg:px-0 px-4 lg:flex-row flex-col lg:items-center text-white;
+	}
+
+	.landing_img {
+		@apply p-10 place-content-center grid;
+	}
+
+	.waves {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.waves svg {
+		position: relative;
+		display: block;
+		width: calc(300% + 1.3px);
+		height: 145px;
+	}
+
+	.waves .wave_fill {
+		fill: #ffffff;
+	}
+}

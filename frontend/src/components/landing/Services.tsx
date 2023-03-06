@@ -6,9 +6,8 @@ import ServicesData from '../../assets/datas/Services.json';
 
 const Services: React.FC = () => {
 	return (
-		<Section>
-			<Heading name='Our Services:' desc='this is desc' />
-			<Card items={ServicesData} cardpercol={3} />
+		<Section id='services'>
+			<p className='text-center'>services</p>
 		</Section>
 	);
 };

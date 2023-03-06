@@ -4,11 +4,14 @@ import Classes from '../assets/css/Style.module.css';
 type Children = {
 	children: React.ReactNode;
 	className?: string | '';
+	id: string;
 };
 
-const Section: React.FC<Children> = ({ children, className }) => {
+const Section: React.FC<Children> = ({ id, children, className }) => {
 	return (
-		<section className={`${Classes.section} ${className}`}>{children}</section>
+		<section id={id} className={`${Classes.section} ${className}`}>
+			{children}
+		</section>
 	);
 };
 

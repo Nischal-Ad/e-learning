@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, ReactElement } from 'react';
 import Section from '../../utils/Section';
 import { LandingNavLInks } from './Navlinks';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { RxCross2 } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
+import Styles from '../../assets/css/Style.module.css';
+import logo from '../../assets/img/logo.svg';
+import logoBlack from '../../assets/img/logo_black.svg';
 
 export type navLinks = {
-	links: { name: string; link: string; btn?: boolean }[];
+	links: { name: string | ReactElement; link: string }[];
 };
 
 const Navbar: React.FC<navLinks> = ({ links }) => {
@@ -29,47 +32,40 @@ const Navbar: React.FC<navLinks> = ({ links }) => {
 	});
 
 	const navBg =
-		active || drop ? 'bg-white text-secondary' : 'bg-transparent text-white';
+		active || drop ? Styles.header_bg_main : Styles.header_bg_active;
 	return (
-		<header className={`z-10 top-0 w-full fixed ${navBg}`}>
-			<Section className='flex justify-between  py-4  items-center'>
-				<div className='w-[180px]'>
+		<header className={`${Styles.header} ${navBg}`}>
+			<Section id='navbar' className={Styles.navbar_section}>
+				<div className={Styles.navbar_logo}>
 					<Link to={'/'}>
-						<img
-							src={
-								active || drop
-									? process.env.PUBLIC_URL + '/img/logo_black.png'
-									: process.env.PUBLIC_URL + '/img/logo.png'
-							}
-							alt=''
-						/>
+						<img src={active || drop ? logoBlack : logo} alt='' />
 					</Link>
 				</div>
 				<div>
-					<span className='lg:hidden'>
+					<span className={Styles.navbar_span_links}>
 						{!drop ? (
 							<HiOutlineMenuAlt1
-								className='w-10 h-10'
+								className={Styles.show_hide}
 								onClick={(e) => {
 									setDrop(!drop);
 								}}
 							/>
 						) : (
 							<RxCross2
-								className='w-10 h-10'
+								className={Styles.show_hide}
 								onClick={(e) => {
 									setDrop(!drop);
 								}}
 							/>
 						)}
 					</span>
-					<span className='lg_max:hidden'>
+					<span>
 						<LandingNavLInks links={links} />
 					</span>
 				</div>
 			</Section>
 			{drop && (
-				<div className='bg-white'>
+				<div className={Styles.mobile_links}>
 					<LandingNavLInks links={links} />
 				</div>
 			)}
