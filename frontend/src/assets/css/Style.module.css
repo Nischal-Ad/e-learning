@@ -44,7 +44,11 @@
 	}
 
 	.mavLinks_list {
-		@apply lg:mx-4 lg:my-0 my-6  cursor-pointer;
+		@apply lg:mx-4 lg:my-0 my-7 cursor-pointer;
+	}
+
+	.nav_links {
+		@apply tracking-wider text-[#252641];
 	}
 
 	.navLinks_dispaly {
@@ -64,7 +68,7 @@
 	}
 
 	.logo_text {
-		@apply text-white font-semibold;
+		@apply text-white font-semibold leading-[40px];
 	}
 
 	.footer_body {
@@ -108,7 +112,7 @@
 	}
 
 	.navbar_section {
-		@apply flex justify-between  py-4  items-center;
+		@apply flex justify-between  py-4 px-3 items-center;
 	}
 
 	.header_bg_main {
@@ -128,31 +132,96 @@
 	}
 
 	.mobile_links {
-		@apply bg-white;
+		@apply bg-white h-[100dvh];
 	}
-	/*
 
+	.topic_box {
+		@apply text-center grid place-items-center mb-6 md:mt-4 mt-2;
+	}
+
+	.topic_box > .box {
+		@apply md:w-1/2;
+	}
+
+	.topic {
+		@apply text-[#2F327D];
+	}
+
+	.topic > span {
+		@apply text-[#00CBB8];
+	}
+
+	.card {
+		@apply grid gap-10 lg:grid-cols-3 drop-shadow-sm py-10 text-center;
+	}
+
+	.imagecard_grid {
+		@apply grid md:grid-cols-2 gap-10 md:gap-4 drop-shadow-sm py-4;
+	}
 
 	.card_body {
-		@apply bg-white drop-shadow-md p-5 flex flex-col items-center rounded-md min-h-[400px];
+		@apply bg-white flex flex-col items-center rounded-[20px] max-h-[430px] mx-2 mt-10 md:mx-0 pb-4 md:pb-8;
+		box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+	}
+
+	.services_roundImg {
+		@apply rounded-full w-[5.5em] h-[5.5rem] border-none object-scale-down bg-[#00CBB8] relative -top-14;
 	}
 
 	.card_heading {
-		@apply text-[24px] text-secondary my-[6px];
-		overflow: hidden;
-		display: -webkit-box;
-		-webkit-line-clamp: 1;
-		-webkit-box-orient: vertical;
+		@apply text-[#2F327D] text-[30px] font-semibold leading-[40px] py-5;
 	}
 
-	.card_desc {
-		@apply leading-[30px];
-		overflow: hidden;
-		display: -webkit-box;
-		-webkit-line-clamp: 7;
-		-webkit-box-orient: vertical;
+	.imageCard {
+		@apply relative mx-4;
+		box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
 	}
 
+	.imageCard_img {
+		@apply rounded-md w-full max-h-[23rem];
+	}
+
+	.imageCard_box {
+		@apply grid justify-items-center place-content-center gap-10 rounded-md  w-full h-full absolute top-0 opacity-100 md:opacity-0 md:hover:opacity-100 duration-200 md:hover:bg-[#1A171b41] md:bg-none bg-[#1A171b41];
+	}
+
+	.imageCard_box > h2 {
+		@apply text-[40px] tracking-wide text-white;
+	}
+
+	.imageCard_btn {
+		@apply bg-opacity-60;
+	}
+
+	.testiminal {
+		@apply relative md:ml-6;
+	}
+
+	.testiminals_img {
+		@apply rounded-[6rem] w-[30rem] h-[36rem];
+	}
+
+	.comment_box {
+		@apply absolute border-l-8 border-l-red-500 rounded-[20px] p-6 pb-3 -bottom-12 md:left-20 bg-white md:w-[33rem];
+		box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1);
+	}
+
+	.comment_box > p {
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		display: -webkit-box;
+		@apply text-justify;
+	}
+
+	.testiminal_bottom {
+		@apply flex items-end flex-col pt-4;
+	}
+
+	.testiminal_bottom > h2 {
+		@apply text-[#2F327D];
+	}
+	/*
 	.testomonial_comments {
 		@apply leading-[24px] mb-5 text-justify min-h-[96px];
 		overflow: hidden;

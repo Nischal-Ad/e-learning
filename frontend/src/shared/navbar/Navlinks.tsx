@@ -8,7 +8,7 @@ export const LandingNavLInks: React.FC<navLinks> = ({ links }) => {
 		return (
 			<li key={i} className={Styles.mavLinks_list}>
 				<NavLink to={navItem.link}>
-					<h3>{navItem.name}</h3>
+					<h2 className={Styles.nav_links}>{navItem.name}</h2>
 				</NavLink>
 			</li>
 		);

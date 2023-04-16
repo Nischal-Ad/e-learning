@@ -59,7 +59,7 @@ const Navbar: React.FC<navLinks> = ({ links }) => {
 							/>
 						)}
 					</span>
-					<span>
+					<span className=' hidden lg:block'>
 						<LandingNavLInks links={links} />
 					</span>
 				</div>
