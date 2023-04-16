@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/e-learning/static/css/main.5be1723c.css",
-    "main.js": "/e-learning/static/js/main.6e2eb71d.js",
-    "static/media/dotts.svg": "/e-learning/static/media/dotts.2f258b81b3da7336f660.svg",
+    "main.css": "/e-learning/static/css/main.d64809da.css",
+    "main.js": "/e-learning/static/js/main.d78ce913.js",
+    "static/media/student.png": "/e-learning/static/media/student.15422d191146e972f493.png",
+    "static/media/heading-img.png": "/e-learning/static/media/heading-img.87965450bffd1fb13d89.png",
+    "static/media/test.jpg": "/e-learning/static/media/test.52f4c3c4f04331359040.jpg",
+    "static/media/goalImg.jpg": "/e-learning/static/media/goalImg.5ddfb593b35eddf2480f.jpg",
+    "static/media/logo_black.svg": "/e-learning/static/media/logo_black.3022a1bc8e09e27853b14f0dd6c030ea.svg",
+    "static/media/logo.svg": "/e-learning/static/media/logo.0bc970b5545a2f7a98dae3776fe3f028.svg",
+    "static/media/calendar.svg": "/e-learning/static/media/calendar.20a17e8e8070a483878bf2ce4d476839.svg",
+    "static/media/file.svg": "/e-learning/static/media/file.860e972293d916c3eb0d7acf85b7aafe.svg",
+    "static/media/user.svg": "/e-learning/static/media/user.fde38cda68e992089805909ee92bef90.svg",
     "index.html": "/e-learning/index.html",
-    "static/media/waves.svg": "/e-learning/static/media/waves.6cfbcce2d2ab1475d329.svg",
-    "main.5be1723c.css.map": "/e-learning/static/css/main.5be1723c.css.map",
-    "main.6e2eb71d.js.map": "/e-learning/static/js/main.6e2eb71d.js.map"
+    "main.d64809da.css.map": "/e-learning/static/css/main.d64809da.css.map",
+    "main.d78ce913.js.map": "/e-learning/static/js/main.d78ce913.js.map"
   },
   "entrypoints": [
-    "static/css/main.5be1723c.css",
-    "static/js/main.6e2eb71d.js"
+    "static/css/main.d64809da.css",
+    "static/js/main.d78ce913.js"
   ]
 }
