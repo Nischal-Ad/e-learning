@@ -2,24 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
 	* {
 		@apply font-poppins;
 	}
-}
 
-h1 {
-	@apply font-bold text-[32px] leading-[43px] text-secondary;
-}
+	h1 {
+		@apply font-bold text-[32px] leading-[62px];
+	}
+	h2 {
+		@apply font-semibold text-[18px] leading-[32px] text-secondary;
+	}
 
-h2 {
-	@apply font-semibold text-[18px] leading-[32px] text-secondary;
-}
+	h3 {
+		@apply font-medium text-base;
+	}
 
-h3 {
-	@apply font-medium text-[18px];
-}
-
-p {
-	@apply text-dark;
+	p {
+		@apply font-normal text-base text-secondary;
+	}
 }

@@ -2,13 +2,17 @@ import React from 'react';
 import Card from '../../utils/Card';
 import Heading from '../../utils/Heading';
 import Section from '../../utils/Section';
-import ServicesData from '../../assets/datas/Services.json';
+import { services } from '../../assets/datas/Services';
 
 const Services: React.FC = () => {
 	return (
-		<Section>
-			<Heading name='Our Services:' desc='this is desc' />
-			<Card items={ServicesData} cardpercol={3} />
+		<Section id='services'>
+			<Heading
+				heading='All-In-One'
+				headingTopic='Cloud Software'
+				desc='TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.'
+			/>
+			<Card items={services} />
 		</Section>
 	);
 };

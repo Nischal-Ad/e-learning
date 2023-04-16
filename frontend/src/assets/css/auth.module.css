@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.body {
+		@apply md:flex justify-evenly items-center;
+	}
+
+	.btn {
+		@apply mx-4 rounded-full w-10 h-10 text-xl flex justify-center items-center mb-4 mt-2 p-2;
+		background-color: rgba(73, 187, 189, 0.1);
+	}
+
+	.auth_btn {
+		@apply mt-2 w-[200px] float-right;
+	}
+
+	.forgetPass {
+		@apply text-right cursor-pointer;
+	}
+
+	.form_container {
+		@apply w-full px-10 py-4;
+	}
+
+	.img {
+		@apply w-[35%] hidden md:block;
+	}
+
+	.body_form {
+		@apply flex flex-col justify-center items-center md:w-[60%] px-5;
+	}
+
+	.body_form h2 {
+		@apply text-center pb-4;
+	}
+
+	.form_btn {
+		@apply flex justify-evenly h-14 items-center text-white rounded-full md:w-[45%] w-[60vw] mb-[20px];
+		background-color: rgba(73, 187, 189, 0.6);
+	}
+
+	.form_btn h3 {
+		@apply cursor-pointer w-[150px] text-center;
+	}
+
+	.form_btn_active_show {
+		@apply py-2 rounded-full bg-[#49BBBD] -z-10 h-[5%] md:-ml-[12vw] w-[30.2%] mx-2 transition-all delay-150 absolute -ml-[24vw] md:w-[10.2%] md:h-[46px];
+	}
+
+	.register {
+		@apply md:translate-x-[175px] translate-x-[120px];
+	}
+
+	.login {
+		transform: translateX(0%);
+	}
+}
